@@ -1,20 +1,20 @@
-# Moje portfolio w React
+# <span style="font-size: 1.5em; font-weight: bold;">Moje portfolio w React</span> :rocket:
 
-## <span style="color: #3498db;">Opis ogolny</span>
+## <span style="font-weight: bold;">Opis ogolny</span> :page_facing_up:
 Strona internetowa przedstawiająca moje umiejetnosci oraz zainteresowania jako interaktywne CV. Głównym celem jest stworzenie inteaktywnej, responsywnej oraz ciekawej strony, która w czytelny sposob zaprezentuje moje umiejętnośći techniczne, zawodowe. Strona projektowana z myślą o urzytkownikach desktopowych jak i mobilnych.
 
-## <span style="color: #2ecc71;">Technologie</span>
+## <span style="font-weight: bold;">Technologie</span> :hammer_and_wrench:
 
-### <span style="color: white;">React</span>
+### <span style="font-weight: bold;">React</span> :atom:
 React to popularna biblioteka JavaScript. W projekcie wykorzystano komponenty funkcyjne oraz hooki (`useState` i `useEffect`) - usprawnia zarządzanie aplikacją. React umożliwia tworzenie dynamicznych i interaktywnych interfejsów użytkownika poprzez komponenty, które mogą być wielokrotnie używane.
 
-### <span style="color: white;">Font Awesome</span>
+### <span style="font-weight: bold;">Font Awesome</span> :globe_with_meridians:
 Zestaw ikon używanych do wyswietlania różnych symboli i grafik. Dodano za pomocą pakietu `@fortawesome/fontawesome-free`.
 
-### <span style="color: white;">CSS</span>
+### <span style="font-weight: bold;">CSS</span> :art:
 Każdy komponent ma swój plik CSS co pomaga w przyszłej edycji i dostosywaniu.
 
-## <span style="color: #e74c3c;">Struktura projektu</span>
+## <span style="font-weight: bold;">Struktura projektu</span> :file_folder:
 
 <details>
 <summary>Kliknij, aby zobaczyć szczegóły</summary>
@@ -22,7 +22,6 @@ Każdy komponent ma swój plik CSS co pomaga w przyszłej edycji i dostosywaniu.
 <pre>
 moje_portfolio_react/
 ├── public/
-│   ├── favicon.ico
 │   ├── index.html
 │   ├── ikony/
 │   │   ├── github.png
@@ -56,36 +55,36 @@ moje_portfolio_react/
 </p>
 </details>
 
-## <span style="color: #f1c40f;">Problemy i rozwiązania</span>
+## <span style="font-weight: bold;">Problemy i rozwiązania</span> :bug:
 
-### <span style="color: white;">Stylizacja komponentów</span>
+### <span style="font-weight: bold;">Stylizacja komponentów</span> :art:
 **Problem**: Stylizacja komponentów i unikanie konfliktów styli.  
 **Rozwiązanie**: Każdy komponent ma swój plik CSS, co izoluje style i zapobiega ich konfliktom.
 
-### <span style="color: white;">Problem z Podświetleniem Tekstu</span>
+### <span style="font-weight: bold;">Problem z Podświetleniem Tekstu</span> :flashlight:
 **Problem**: Funkcjonalność podświetlenia tekstu nie działała poprawnie.  
 **Rozwiązanie**:
 - Upewniono się, że style CSS dla podświetlenia tekstu są poprawnie zastosowane.
 - Zarządzano zachowaniem podświetlania za pomocą obsługi zdarzeń JavaScript, co poprawiło niezawodność.
 
-### <span style="color: white;">Problem z Responsywnością</span>
+### <span style="font-weight: bold;">Problem z Responsywnością</span> :iphone:
 **Problem**: Strona nie skalowała się prawidłowo w różnych rozmiarach okna.  
 **Rozwiązanie**:
 - Wprowadzono zapytania medialne (media queries) w CSS, aby dostosować projekt do rozmiaru okna.
 - To zapewniło spójny układ na różnych urządzeniach.
 
-## <span style="color: #9b59b6;">Możliwości w przyszłości</span>
+## <span style="font-weight: bold;">Możliwości w przyszłości</span> :crystal_ball:
 
-### <span style="color: white;">Optymalizacja wydajności</span>
+### <span style="font-weight: bold;">Optymalizacja wydajności</span> :zap:
 **Problem**: Spadek wydajności aplikacji przy renderowaniu dużej liczby komponentów.  
 **Możliwe rozwiązanie**: Użycie hooka `useMemo` do memorizacji kosztownych obliczeń oraz `React.memo` do zapobiegania niepotrzebnym renderowaniom komponentów funkcyjnych, które nie zmieniają swoich propsów. Dzięki tym narzędziom można znacznie poprawić wydajność aplikacji.
 
-### <span style="color: white;">Zarządzanie stanem komponentów</span>
+### <span style="font-weight: bold;">Zarządzanie stanem komponentów</span> :wrench:
 **Problem**: Trudności w zarządzaniu stanem między różnymi komponentami.  
 **Możliwe rozwiązanie**: Użycie hooka `useState` do lokalnego zarządzania stanem oraz `useContext` do zarządzania stanem globalnym w aplikacji. Dzięki temu można efektywnie przekazywać dane i metody między komponentami bez potrzeby przekazywania ich przez propsy na każdym poziomie hierarchii komponentów.
 
-## <span style="color: #1abc9c;">Podsumowanie</span>
+## <span style="font-weight: bold;">Podsumowanie</span> :memo:
 Projekt portfolio w React jest przykładem wykorzystania nowoczesnych narzędzi i technologii webowych. Dzięki React oraz CSS możliwe jest stworzenie wydajnej i łatwej do utrzymania aplikacji.
 
-## <span style="color: #e67e22;">Reflekcja</span>
+## <span style="font-weight: bold;">Reflekcja</span> :bulb:
 **Urzytecznosc React`a** jest na tyle duża że swoją prace inżynieryjską będę pisał w tym frameworku. Usprawni mi to cała prace oraz zaoszczedzi dużo czasu.
