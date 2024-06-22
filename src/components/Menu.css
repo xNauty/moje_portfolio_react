@@ -1,0 +1,80 @@
+.menu {
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    box-sizing: border-box; /* Upewnienie się, że padding nie zwiększa szerokości */
+}
+
+.menu .menu-toggle {
+    display: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: white;
+}
+
+.menu .menu-items {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu .menu-items li {
+    margin-right: 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 5px 10px;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.cv-button {
+    background-color: rgba(255, 204, 51, 0.46);
+    margin-right: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    .menu .menu-toggle {
+        display: block;
+    }
+
+    .menu .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .menu .menu-items.show {
+        display: flex;
+    }
+
+    .menu .menu-items li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        width: auto; /* Zmiana szerokości linków w menu */
+        text-align: center;
+        border: none;
+    }
+
+    .cv-button {
+        width: auto; /* Zachowanie oryginalnej szerokości dla przycisku CV */
+        margin: 10px 20px; /* Dostosowanie marginesu, aby wyglądał estetycznie */
+    }
+}

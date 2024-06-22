@@ -1,0 +1,110 @@
+.full-screen-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#clock-container {
+    text-align: center;
+    margin-top: 10vh;
+}
+
+#clock {
+    font-family: 'Miltonian', cursive;
+    font-size: 12vw;
+    animation: changeColorName 7.5s infinite alternate linear;
+    font-weight: lighter;
+}
+
+#date {
+    font-family: 'Miltonian', cursive;
+    font-size: 4vw;
+    animation: changeColorName 7.5s infinite alternate linear;
+}
+
+h1 {
+    font-size: 12vw;
+    margin: 0;
+    animation: changeColorName 7.5s infinite alternate linear;
+    font-family: 'Miltonian', cursive;
+    margin-top: 5vh;
+}
+
+@keyframes changeColorName {
+    0% { color: rgba(85, 202, 238, 1); }
+    100% { color: rgba(137, 18, 216, 1); }
+}
+
+.color-changing-panel {
+    width: 90%;
+    max-width: 40vw;
+    height: auto;
+    border-radius: 25px;
+    z-index: 10;
+    animation: changeColorIkon 10s infinite alternate linear;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    margin-top: 5vh; /* Margines względny od góry */
+    box-sizing: border-box; /* Upewnienie się, że padding nie zwiększa szerokości */
+}
+
+@keyframes changeColorIkon {
+    0% { background-color: rgba(137, 18, 216, 0.5); }
+    100% { background-color: rgba(85, 202, 238, 0.5); }
+}
+
+.social-links {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.social-links img {
+    width: 6vw;
+    height: 6vw;
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    #clock {
+        font-size: 15vw;
+    }
+    
+    #date {
+        font-size: 6vw;
+    }
+
+    h1 {
+        font-size: 15vw;
+    }
+
+    .color-changing-panel {
+        min-width: 60vw;
+    }
+
+    .social-links img {
+        width: 10vw; /* Zwiększenie szerokości ikon w panelu */
+        height: 10vw; /* Zwiększenie wysokości ikon w panelu */
+    }
+}
+
+.email-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.email-button img {
+    width: 6vw;
+    height: 6vw;
+}

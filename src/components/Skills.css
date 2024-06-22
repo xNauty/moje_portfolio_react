@@ -1,0 +1,121 @@
+.skills-section {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    padding: 50px 20px;
+    box-sizing: border-box; /* Upewnienie się, że padding nie zwiększa szerokości */
+}
+
+.neon-text-V {
+    font-family: 'Vampiro One', cursive;
+    animation: neonViolet 1.5s ease-in-out infinite alternate;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.skill {
+    background-color: rgba(51, 51, 51, 0.5);
+    border-radius: 25px;
+    margin: 15px 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    transition: box-shadow 0.5s ease, transform 0.75s ease;
+}
+
+.skill-name {
+    margin-bottom: 10px;
+    font-size: 2vw; 
+    color: white;
+}
+
+.skill-level {
+    display: flex;
+    justify-content: center;
+}
+
+.skill-level .fa-star {
+    color: #ccc;
+    margin: 0 2px;
+    font-size: 1.5vw;
+}
+
+.skill-level .fa-star.filled {
+    color: gold;
+    font-size: 1.5vw;
+}
+
+.skills-subheading {
+    font-size: 2vw;
+    margin-top: 20px;
+    margin-bottom: 35px;
+    color: #fff;
+    text-align: center;
+}
+
+.skills-gap {
+    height: 50px;
+}
+
+/* Neon effect for skill hover */
+.skill:hover {
+    box-shadow: 0 0 20px 10px rgba(255, 255, 255, 0.5);
+}
+
+@keyframes neonViolet {
+    from {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #ff00de, 0 0 20px #ff00de;
+    }
+    to {
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 8px #ff00de, 0 0 10px #ff00de;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .neon-text-V {
+        font-size: 4.5vw;
+    }
+    .skill-name, .skills-subheading {
+        font-size: 2.2vw;
+    }
+    .skill-level .fa-star, .skill-level .fa-star.filled {
+        font-size: 1.3vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .neon-text-V {
+        font-size: min(7vw);
+    }
+    .skill-name, .skills-subheading {
+        font-size: min(3vw);
+    }
+    .skill-level .fa-star, .skill-level .fa-star.filled {
+        font-size: min(2vw);
+    }
+}
+
+@media (max-width: 568px) {
+    .neon-text-V {
+        font-size: min(10vw);
+    }
+    .skill-name, .skills-subheading {
+        font-size: min(5vw);
+    }
+    .skill-level .fa-star, .skill-level .fa-star.filled {
+        font-size: min(5vw);
+    }
+}

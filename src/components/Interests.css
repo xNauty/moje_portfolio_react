@@ -1,0 +1,79 @@
+.interests-section {
+    background-color: rgba(0, 0, 0, 0.75);
+    color: white;
+    font-size: 5vw;
+    text-align: center;
+    padding: 50px 20px;
+    box-sizing: border-box;
+}
+
+.neon-text-interests {
+    font-family: 'Vampiro One', cursive;
+    animation: neonYellow 2.5s ease-in-out infinite alternate;
+    text-align: center;
+    color: white;
+    font-size: 5vw;
+}
+
+.interests-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.interest {
+    background-color: #67019a59;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    width: 90%;
+    max-width: 20vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    font-size: 2vw;
+    color: white;
+}
+
+.interest:hover {
+    transform: scale(1.1);
+}
+
+@keyframes neonYellow {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 40px #ffdd1b, 0 0 70px #ffdd1b;
+    }
+    to {
+      text-shadow: 0 0 35px #ffdd1b, 0 0 40px #ffdd1b, 0 0 50px #ffdd1b, 0 0 75px #ffdd1b;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .neon-text-interests {
+        font-size: 4.5vw;
+    }
+    .interest {
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .neon-text-interests {
+        font-size: min(7vw);
+    }
+    .interest {
+        font-size: min(3vw);
+    }
+}
+
+@media (max-width: 568px) {
+    .neon-text-interests {
+        font-size: min(10vw);
+    }
+    .interest {
+        font-size: min(4vw);
+    }
+}

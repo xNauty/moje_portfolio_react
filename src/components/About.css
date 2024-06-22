@@ -1,0 +1,100 @@
+.about-me-section {
+    background-color: rgba(0, 0, 0, 0.75);
+    width: 100%;
+    padding: 50px 20px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box; /* Upewnienie się, że padding nie zwiększa szerokości */
+    margin-top: 40vw;
+}
+
+.neon-text-about {
+    font-family: 'Vampiro One', cursive;
+    animation: neonBlue 10s ease-in-out infinite normal;
+    color: white;
+    font-size: 5vw;
+}
+
+.about-me-section p {
+    font-size: 2.5vw;
+    line-height: 1.6;
+}
+
+@keyframes neonBlue {
+    0% {
+      text-shadow: 
+        0 0 5px #228dff, 
+        0 0 10px #228dff, 
+        0 0 15px #228dff, 
+        0 0 20px #228dff,
+        0 0 20px transparent,
+        -3000px 0 20px #228dff;
+    }
+    20% {
+      text-shadow: 
+        0 0 10px #228dff, 
+        0 0 20px #228dff, 
+        0 0 30px #228dff, 
+        0 0 40px #228dff,
+        0 0 20px transparent,
+        -3000px 0 20px #228dff;
+    }
+    70% {
+      text-shadow: 
+        0 0 400px transparent, 
+        0 0 450px transparent, 
+        0 0 500px transparent, 
+        0 0 550px transparent,
+        3000px 0 20px #228dff,
+        0 0 20px #228dff;
+    }
+    80% {
+        text-shadow: 
+        0 0 5px transparent, 
+        0 0 15px transparent, 
+        0 0 20px transparent, 
+        0 0 25px transparent,
+        3000px 0 0px #228dff,
+        0 0 20px #228dff;
+    }
+    100% {
+        text-shadow: 
+        0 0 5px #228dff, 
+        0 0 10px #228dff, 
+        0 0 15px #228dff, 
+        0 0 20px #228dff,
+        3000px 0 0px transparent,
+        0 0 20px transparent;
+    }
+}
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1200px) {
+    .about-me-section {
+        margin-top: 5vw;
+    }
+    .neon-text-about {
+        font-size: 4.5vw;
+    }
+    .about-me-section p {
+        font-size: 2.2vw;
+    }
+}
+
+@media (max-width: 992px) {
+    .neon-text-about {
+        font-size: min(7vw);
+    }
+    .about-me-section p {
+        font-size: min(3vw);
+    }
+}
+
+@media (max-width: 568px) {
+    .neon-text-about {
+        font-size: min(10vw);
+    }
+    .about-me-section p {
+        font-size: min(5vw);
+    }
+}
