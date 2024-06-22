@@ -1,5 +1,4 @@
 .interests-section {
-    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     font-size: 5vw;
     text-align: center;
@@ -60,20 +59,26 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
     .neon-text-interests {
         font-size: min(7vw);
     }
     .interest {
         font-size: min(3vw);
     }
+    .interest {
+        max-width: 30vw;
+    }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 600px) {
     .neon-text-interests {
         font-size: min(10vw);
     }
     .interest {
-        font-size: min(4vw);
+        font-size: min(4.5vw);
+    }
+    .interest {
+        max-width: 50vw;
     }
 }

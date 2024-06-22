@@ -81,7 +81,7 @@
     }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 1000px) {
     .neon-text-about {
         font-size: min(7vw);
     }
@@ -90,11 +90,11 @@
     }
 }
 
-@media (max-width: 568px) {
+@media (max-width: 600px) {
     .neon-text-about {
         font-size: min(10vw);
     }
     .about-me-section p {
-        font-size: min(5vw);
+        font-size: min(4.5vw);
     }
 }

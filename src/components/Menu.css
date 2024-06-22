@@ -44,7 +44,42 @@
 }
 
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
+    .menu .menu-toggle {
+        display: block;
+    }
+
+    .menu .menu-items {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.9);
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    .menu .menu-items.show {
+        display: flex;
+    }
+
+    .menu .menu-items li {
+        margin: 10px 0;
+    }
+
+    .menu a {
+        width: auto; /* Zmiana szerokości linków w menu */
+        text-align: center;
+        border: none;
+    }
+
+    .cv-button {
+        width: auto; /* Zachowanie oryginalnej szerokości dla przycisku CV */
+        margin: 10px 20px; /* Dostosowanie marginesu, aby wyglądał estetycznie */
+    }
+}
+
+@media (max-width: 600px) {
     .menu .menu-toggle {
         display: block;
     }

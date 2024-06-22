@@ -73,8 +73,15 @@ h1 {
     height: 6vw;
 }
 
+.email-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
 /* Media Queries for Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 800px) {
     #clock {
         font-size: 15vw;
     }
@@ -97,14 +104,32 @@ h1 {
     }
 }
 
-.email-button {
-    background: none;
-    border: none;
-    padding: 0;
-    cursor: pointer;
+@media (max-width: 600px) {
+    #clock {
+        font-size: 18vw;
+    }
+    
+    #date {
+        font-size: 8vw;
+    }
+
+    h1 {
+        font-size: 18vw;
+    }
+
+    .color-changing-panel {
+        min-width: 60vw;
+    }
+
+    .social-links img {
+        width: 10vw; /* Zwiększenie szerokości ikon w panelu */
+        height: 10vw; /* Zwiększenie wysokości ikon w panelu */
+    }
 }
 
-.email-button img {
-    width: 6vw;
-    height: 6vw;
+@media (max-height: 750px) {
+    .full-screen-section {
+        height: 250vh;
+        max-height: 750px;
+    }
 }
