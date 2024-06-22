@@ -1,7 +1,7 @@
 # <span style="font-size: 1.5em; font-weight: bold;">Moje portfolio w React</span> :rocket:
 
 ## <span style="font-weight: bold;">Opis ogolny</span> :page_facing_up:
-Strona internetowa przedstawiająca moje umiejetnosci oraz zainteresowania jako interaktywne CV. Głównym celem jest stworzenie inteaktywnej, responsywnej oraz ciekawej strony, która w czytelny sposob zaprezentuje moje umiejętnośći techniczne, zawodowe. Strona projektowana z myślą o urzytkownikach desktopowych jak i mobilnych.
+Strona internetowa przedstawiająca moje umiejetnosci oraz zainteresowania jako interaktywne CV. Głównym celem jest stworzenie inteaktywnej, responsywnej oraz ciekawej strony, która w czytelny sposob zaprezentuje moje umiejętnośći techniczne, zawodowe. Strona projektowana z myślą o użytkownikach desktopowych jak i mobilnych.
 
 ## <span style="font-weight: bold;">Technologie</span> :hammer_and_wrench:
 
