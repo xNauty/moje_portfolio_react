@@ -64,8 +64,8 @@ moje_portfolio_react/
 ### <span style="font-weight: bold;">Problem z Podświetleniem Tekstu</span> :flashlight:
 **Problem**: Funkcjonalność podświetlenia tekstu nie działała poprawnie.  
 **Rozwiązanie**:
-- Upewniono się, że style CSS dla podświetlenia tekstu są poprawnie zastosowane.
-- Zarządzano zachowaniem podświetlania za pomocą obsługi zdarzeń JavaScript, co poprawiło niezawodność.
+- Upewniłem się, że style CSS dla podświetlenia tekstu są poprawnie zastosowane.
+- Przerobiono zachowaniem podświetlania za pomocą obsługi zdarzeń JavaScript.
 
 ### <span style="font-weight: bold;">Problem z Responsywnością</span> :iphone:
 **Problem**: Strona nie skalowała się prawidłowo w różnych rozmiarach okna.  
